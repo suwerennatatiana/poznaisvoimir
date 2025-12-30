@@ -1,181 +1,176 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Know Your World / Познай свой мир – Tatiana Belozub</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Know Your World / Познай свой мир — Tatiana Belozub</title>
 
 <style>
     body {
-        margin:0;
-        padding:0;
-        background: linear-gradient(180deg, #fff9f4, #f7f1ea, #f6f2f9);
-        font-family: "Segoe UI", Arial, sans-serif;
-        color:#574b46;
-        line-height:1.7;
-    }
-
-    header {
-        text-align:center;
-        padding:70px 20px 10px;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(to bottom, #faf5ef, #f7f0ff);
+        margin: 0;
+        padding: 0;
+        color: #5b4636;
+        line-height: 1.6;
+        text-align: center;
+        overflow-x: hidden;
     }
 
     h1 {
-        font-size:40px;
-        margin:0;
-        font-weight:600;
-        color:#7a5e4a;
-        letter-spacing:1px;
-        text-shadow:0 0 12px rgba(255,230,180,0.4);
+        margin-top: 40px;
+        font-size: 38px;
+        color: #4b2e1e;
+        animation: fadeIn 1.2s ease;
     }
 
-    header p {
-        font-size:20px;
-        color:#8c7264;
-        margin-top:12px;
+    .subtitle {
+        font-size: 18px;
+        color: #6d5648;
+        max-width: 650px;
+        margin: auto;
+        animation: fadeIn 1.6s ease;
     }
 
-    .portrait {
-        display:block;
-        width:300px;
-        margin:35px auto 25px;
-        border-radius:14px;
-        box-shadow:0 12px 30px rgba(180,160,140,0.35);
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(10px);}
+        to {opacity: 1; transform: translateY(0);}
     }
 
-    section {
-        max-width:900px;
-        margin:50px auto;
-        padding:0 20px;
-        background: rgba(255,255,255,0.65);
-        border-radius:18px;
-        box-shadow:0 8px 20px rgba(180,160,140,0.25);
-        backdrop-filter: blur(3px);
+    .photo-block {
+        margin-top: 30px;
+        animation: fadeIn 2s ease;
     }
 
-    h2 {
-        font-size:28px;
-        margin-bottom:12px;
-        color:#7a5e4a;
-        text-shadow:0 0 10px rgba(240,210,190,0.4);
+    .photo-block img {
+        width: 270px;
+        border-radius: 14px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.18);
     }
 
-    p {
-        font-size:18px;
-        color:#5c4f48;
-        margin-bottom:20px;
+    .section {
+        margin-top: 55px;
+        padding: 35px;
+        background: #ffffffdd;
+        width: 88%;
+        max-width: 880px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 24px;
+        box-shadow: 0 8px 30px rgba(198, 170, 130, 0.28);
+        animation: fadeIn 1.4s ease;
+    }
+
+    .section h2 {
+        margin-bottom: 20px;
+        color: #4b2e1e;
+        font-size: 28px;
     }
 
     .book-card {
-        background:#fffdfb;
-        padding:22px;
-        border-radius:15px;
-        margin:22px 0;
-        border:1px solid #e8ded4;
-        box-shadow:0 5px 16px rgba(190,170,150,0.18);
+        background: #fff;
+        padding: 20px;
+        border-radius: 18px;
+        margin-bottom: 25px;
+        text-align: left;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        animation: fadeIn 1.4s ease;
     }
 
     .book-card h3 {
-        margin:0 0 10px;
-        font-size:22px;
-        color:#6c564a;
+        margin: 0 0 12px;
+        font-size: 20px;
+        color: #4b2e1e;
     }
 
     .book-card a {
-        color:#a8845c;
-        text-decoration:none;
-        font-size:17px;
-        font-weight:500;
+        color: #a67c52;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
     }
 
     .book-card a:hover {
-        text-decoration:underline;
+        text-decoration: underline;
     }
 
-    footer {
-        text-align:center;
-        padding:40px 20px 30px;
-        color:#8c7e76;
-        font-size:15px;
+    .divider {
+        width: 60%;
+        height: 2px;
+        background: linear-gradient(to right, #ceb8a0, #dacbd8, #ceb8a0);
+        margin: 50px auto;
+        border-radius: 2px;
+        opacity: 0.7;
     }
 </style>
-</head>
 
+</head>
 <body>
 
-<header>
-    <h1>Know Your World / Познай свой мир</h1>
-    <p>by Tatiana Belozub — Children’s Author & Psychology Writer</p>
-</header>
+<h1>Know Your World / Познай свой мир</h1>
 
-<img src="photo.jpg" alt="Tatiana Belozub" class="portrait">
+<p class="subtitle">
+Tatiana Belozub — children's author and creator of the “Know Your World” series, exploring nature, Earth, energy, and the inner world of a child.
+</p>
 
-<section>
+<div class="photo-block">
+    <img src="photo.jpg" alt="Tatiana Belozub">
+</div>
+
+<div class="divider"></div>
+
+<!-- ABOUT SECTION -->
+<div class="section">
     <h2>About the Author</h2>
     <p>
-        I am <strong>Tatiana Belozub</strong>, a children’s author creating warm, gentle,
-        meaningful books filled with wisdom, nature, and emotional clarity.  
-        My mission is to help children feel the world as a living, interconnected space 
-        full of beauty, truth, and inner strength.
+        Tatiana Belozub is a children's writer whose works explore the living Earth, the soul of nature, the quiet wisdom of seasons, and the emotional world of a child. 
+        Her storytelling blends gentleness, depth, and intuitive understanding of the human heart.
     </p>
     <p>
-        Through my series <strong>“Know Your World”</strong>, I guide young readers into 
-        the realms of Earth, energy, intuition, water, crystals, seasons, and the 
-        creative human spirit.
+        Tatiana is also the author of psychological reflections, guiding families toward awareness, harmony, and an inner sense of home.
     </p>
-    <p>
-        I am also developing psychology books focused on emotional balance, 
-        conscious family life, and understanding the inner world of a child.
-    </p>
-</section>
+</div>
 
-<section>
+<div class="divider"></div>
+
+<!-- BOOKS SECTION -->
+<div class="section">
     <h2>Books</h2>
 
     <div class="book-card">
         <h3>🇺🇦 Mother Earth – Ukrainian Edition (Hardcover)</h3>
-        <a href="https://www.amazon.com/dp/B0G7D2PFZ2" target="_blank">Buy on Amazon</a>
+        <a href="https://www.amazon.com/dp/B0G7D2PFZ2" target="_blank" rel="noopener">Buy on Amazon</a>
     </div>
 
     <div class="book-card">
         <h3>🇵🇱 Matka-Ziemia – Polish Edition (Paperback)</h3>
-        <a href="https://www.amazon.com/dp/B0G7JCLVT6" target="_blank">Kup na Amazon</a>
+        <a href="https://www.amazon.com/dp/B0G7JCLVT6" target="_blank" rel="noopener">Kup na Amazon</a>
     </div>
 
     <div class="book-card">
         <h3>🇬🇧 Mother Earth – English Edition (Paperback)</h3>
-        <a href="https://www.amazon.com/dp/B0G6Y3NH2Y" target="_blank">Buy on Amazon</a>
+        <a href="https://www.amazon.com/dp/B0G6Y3NH2Y" target="_blank" rel="noopener">Buy on Amazon</a>
     </div>
 
     <div class="book-card">
         <h3>🇬🇧 Mother Earth – English Edition (Hardcover)</h3>
-        <a href="https://www.amazon.com/dp/B0G71N2W2Z" target="_blank">Buy on Amazon</a>
+        <a href="https://www.amazon.com/dp/B0G71N2W2Z" target="_blank" rel="noopener">Buy on Amazon</a>
     </div>
+</div>
 
-</section>
+<div class="divider"></div>
 
-<section>
-    <h2>Book Series: Know Your World</h2>
+<!-- PSYCHOLOGY SECTION -->
+<div class="section">
+    <h2>Psychology & Inner Growth</h2>
     <p>
-        The series explores Earth, nature, trees, water, crystals, seasons,
-        emotional awareness, and the energetic structure of the world.
-        It teaches children how to sense life, observe gently, understand deeply,
-        and connect with themselves and the universe.
+        Tatiana writes psychological and philosophical texts focused on conscious parenting, family unity, emotional development, and the inner structure of human choice.
     </p>
-</section>
-
-<section>
-    <h2>Psychology Books</h2>
     <p>
-        I am writing several psychology books that focus on emotional clarity,
-        inner truth, family harmony, and raising children with love, wisdom,
-        softness, and conscious presence.
+        Her work highlights the importance of gentleness, intuition, awareness, and the living connection between humans and nature.
     </p>
-</section>
-
-<footer>
-    © 2025 Tatiana Belozub – Know Your World
-</footer>
+</div>
 
 </body>
 </html>
