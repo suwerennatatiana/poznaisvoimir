@@ -1,71 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Татьяна Белозуб — детские книги</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Know Your World — Children’s Book Series</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      background: #f5f0fb;
-      color: #3f3362;
-      line-height: 1.7;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    header {
-      background: linear-gradient(135deg, #d7c7ef, #e8dcfa);
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-      color: #3a2c60;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 16px;
-      opacity: 0.9;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 25px 18px 60px;
-    }
-
-    .section {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 22px 20px;
-      margin-bottom: 26px;
-      box-shadow: 0 10px 25px rgba(120, 94, 168, 0.08);
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #4b3b7a;
-      font-size: 22px;
-    }
-
-    .photo {
-      width: 160px;
-      height: 160px;
+<style>
+  body { margin:0; font-family:"Poppins",sans-serif; background:#f6f8fc; color:#333 }
+  header { text-align:center; padding:60px 18px; background:rgb(214, 203, 211); box-shadow:0 4px 14px rgba(0,0,0,.05) }
+  header h1 { font-family:"Dancing Script",cursive; font-size:3em; margin-bottom:10px }
+  nav { text-align:center; background:#eee1ee; padding:12px }
+  nav a { color:#000000; margin:0 10px; text-decoration:none; font-weight:500 }
+  section { padding:30px 18px; max-width:900px; margin:auto }
+  .box { background:white; padding:18px; border-radius:12px; box-shadow:0 10px 26px rgba(0,0,0,.06); margin-bottom:25px }
+  h2 { font-family:"Dancing Script",cursive; font-size:2.2em; margin-bottom:10px }
+  h3 { margin-top:10px }
+  footer { text-align:center; padding:5px 28px 28px; color:#000000 }
+  hr { border:none; border-top:1px solid #e6e8ee; margin:18px 0 }
+  #about{ margin-top: 10px;}
+  .foto{
+    width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid #e7dbfa;
       margin: 10px 0 12px;
-    }
+      
 
-    .books a {
+  }
+  #contact{
+     display: flex;                  /* включаем flex */
+    justify-content: space-between; /* раздвигаем по краям */
+    align-items: center;            /* выравниваем по вертикали (опция) */
+   }
+   .books a {
       display: inline-block;
       margin: 5px 6px 6px 0;
       padding: 7px 10px;
-      background: #e9defb;
+      background: #f1eef5;
       color: #473873;
       border-radius: 10px;
       text-decoration: none;
@@ -77,91 +51,130 @@
       background: #d9c6f7;
     }
 
-    footer {
-      text-align: center;
-      padding: 30px 10px 18px;
-      font-size: 13px;
-      color: #6a5a91;
-    }
-  </style>
+  
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Татьяна Белозуб</h1>
-  <p>Автор детских книг — о природе, жизни и внутреннем мире ребёнка</p>
+<header id="home">
+  <h1>Know Your World — Look Into Your Memory</h1>
+  <p>A gentle, truthful children’s book series about Earth, nature and who we truly are.</p>
 </header>
 
-<div class="container">
+<nav>
+  <a href="#about">About</a>
+  <a href="#why">Why</a>
+  <a href="#books">Books</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <div class="section" style="text-align:center;">
-    <img src="foto.jpg" alt="Татьяна Белозуб" class="photo">
-  </div>
 
-  <div class="section">
-    <h2>Обо мне</h2>
-    <p>
-      Я создаю книги, которые помогают детям и семьям чувствовать связь с природой, с собой и с миром вокруг.
-      Для меня книга — это не просто история. Это путь к внутреннему спокойствию, наблюдательности и живому осознанию.
-    </p>
-    <p>
-      Я всегда была рядом с детьми — как жена, мама и человек, который внимательно наблюдает за тем,
-      как слово, образ и атмосфера влияют на детскую душу.
-    </p>
-  </div>
+<section id="about" class="box">
+  <h2>About the Series</h2>
 
-  <div class="section">
-    <h2>Мой путь: жена, мама, автор</h2>
-    <p>
-      Семья стала местом, где я увидела: то, что мы даём ребёнку для души, формирует то, кем он станет.
-    </p>
-    <p>
-      Я наблюдала, как по-разному действуют книги и мультфильмы.
-      Мультфильмы дают готовую картинку, не оставляя пространства для внутренней работы.
-      А книга открывает пространство воображения: ребёнок думает, чувствует, делает выводы.
-    </p>
-    <p>
-      Когда мы подаём знания мягко и образно, ребёнок учится мыслить самостоятельно,
-      задавать вопросы и ощущать связь с Землёй, водой, природой и собой.
-      Так появились мои книги — не для развлечения, а для роста.
-    </p>
-  </div>
+  <p>
+    <strong>“Know Your World — Look Into Your Memory”</strong> is a growing educational book
+    series created to help children gently remember their connection with Earth, nature,
+    water, seasons, animals — and with their own inner world.
+  </p>
 
-  <div class="section">
-    <h2>Мои книги</h2>
+  <p>
+    The books speak with children sincerely, without fear or pressure — through stories,
+    images, and simple truths about how the world works and how we can live in harmony
+    with it.
+  </p>
+  
+</section>
 
-    <p><strong>Матушка-Земля — Земелька</strong></p>
-    <div class="books">
+
+<section id="why" class="box">
+  <h2>Why These Books Matter</h2>
+
+  <p>
+    Many children today live among screens — while losing their natural bond with Earth.
+    This series restores that connection in a calm, thoughtful way.
+  </p>
+
+  <ul>
+    <li>teaches how the Earth really works, in honest simple language</li>
+    <li>awakens curiosity and respect for nature</li>
+    <li>helps children feel confident and safe</li>
+    <li>shows that every person is a creator, not just a consumer</li>
+    <li>gives practical knowledge useful in real life</li>
+  </ul>
+
+  <p>
+    These books help children grow kinder, more mindful and aware — without losing joy,
+    imagination or freedom.
+  </p>
+</section>
+
+
+<section id="books" class="box">
+  <h2>Existing and Planned Books in the Series</h2>
+  
+  <p><strong>Mother Earth</strong><br>
+  A journey through our living planet — soil, trees, forests, mountains, roots, insects
+  and seasons — learning that the Earth is alive and needs our care.</p>
+  <div class="books">
       <a href="https://www.amazon.com/dp/B0G71N2W2Z" target="_blank">Amazon US</a>
       <a href="https://www.amazon.co.uk/dp/B0G7D2PFZ2" target="_blank">Amazon UK</a>
       <a href="https://www.amazon.pl/dp/B0G7JCLVT6" target="_blank">Amazon PL</a>
-    </div>
-
-    <p><strong>Книга о Воде</strong></p>
-    <div class="books">
       <a href="https://www.amazon.com/dp/B0G6Y3NH2Y" target="_blank">Amazon US</a>
-      <a href="https://www.amazon.co.uk/dp/B0G7D2PFZ2" target="_blank">Amazon UK</a>
-      <a href="https://www.amazon.pl/dp/B0G7JCLVT6" target="_blank">Amazon PL</a>
     </div>
+
+
+  <p><strong>The Story of Water</strong><br>
+  Rivers, oceans, clouds and rain — where water comes from, why it is sacred, and how
+  children can help protect it.</p>
+
+  <p><strong>The Four Directions</strong><br>
+  North, South, East and West explained through games, observation and movement — 
+  developing a natural sense of space and navigation.</p>
+
+  <p><strong>The Earth’s Magnetic Field</strong><br>
+  An invisible shield that protects our planet — told simply through animals, nature,
+  compasses and real examples.</p>
+
+  <p><strong>Finding Water in Heat</strong><br>
+  Safe, gentle survival knowledge — where water can be found in nature, why preparation
+  matters, and how to stay respectful to the environment.</p>
+
+  <p><strong>Humans as Creators</strong><br>
+  How thoughts, choices and actions shape our world — and how every child can help
+  nature through kindness, creativity and responsibility.</p>
+
+  <p><strong>Helping Nature Through Our Actions</strong><br>
+  Simple everyday things a child can do: planting, protecting, reusing, cleaning,
+  sharing and bringing harmony instead of harm.</p>
+
+  <hr>
+
+  <p>
+    Each book reminds children: they are part of Earth, part of life — 
+    and their presence truly matters.
+  </p>
+</section>
+
+
+<section id="contact" class="box">
+  <div class="contact">
+    <h2>Contact</h2>
+
+  <p>
+    For collaboration, illustration, publishing inquiries or translation requests:
+  </p>
+
+  <p><strong>Email:</strong> suweren67948@proton.me</p>
   </div>
 
-  <div class="section">
-    <h2>Связаться со мной</h2>
-    <p>
-      Если вам близка тематика моих книг или вы хотите обсудить сотрудничество —
-      напишите мне: <strong>ваш email здесь</strong>.
-    </p>
-  </div>
-
-</div>
+  <img src="photo.jpg" alt="myphoto" class="foto">
+</section>
 
 <footer>
-  © Татьяна Белозуб — детские книги, вдохновлённые природой и любовью
+  <strong>“Know Your World — Look Into Your Memory” • Children’s Educational Series</strong>
 </footer>
 
 </body>
 </html>
-
-
-
