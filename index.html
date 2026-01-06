@@ -1,21 +1,23 @@
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Татьяна Белозуб — Автор детских книг</title>
+  <title>Татьяна Белозуб — детские книги</title>
 
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #fbf8ff;
-      color: #333;
-      line-height: 1.6;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f5f0fb;
+      color: #3f3362;
+      line-height: 1.7;
     }
 
     header {
-      background: linear-gradient(135deg, #cdb8f5, #e9ddff);
+      background: linear-gradient(135deg, #d7c7ef, #e8dcfa);
       padding: 40px 20px;
       text-align: center;
     }
@@ -23,87 +25,65 @@
     header h1 {
       margin: 0;
       font-size: 32px;
-      color: #4b2b7f;
+      color: #3a2c60;
     }
 
     header p {
       margin-top: 10px;
-      font-size: 18px;
-      color: #5a418f;
+      font-size: 16px;
+      opacity: 0.9;
     }
 
-    main {
-      max-width: 920px;
+    .container {
+      max-width: 900px;
       margin: 0 auto;
-      padding: 25px;
+      padding: 25px 18px 60px;
     }
 
-    section {
-      margin-bottom: 35px;
+    .section {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 22px 20px;
+      margin-bottom: 26px;
+      box-shadow: 0 10px 25px rgba(120, 94, 168, 0.08);
     }
 
     h2 {
-      color: #5a2f9c;
-      margin-bottom: 10px;
-    }
-
-    .author-block {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 20px;
-      align-items: start;
-    }
-
-    .author-block img {
-      width: 100%;
-      border-radius: 12px;
-      border: 3px solid #e8d9ff;
-      box-shadow: 0 10px 24px rgba(120, 92, 210, 0.12);
-    }
-
-    .books-list {
-      display: grid;
-      gap: 18px;
-    }
-
-    .book-card {
-      background: #f6f1ff;
-      border: 1px solid #e5d9fb;
-      padding: 18px;
-      border-radius: 10px;
-    }
-
-    .book-card h3 {
       margin-top: 0;
+      color: #4b3b7a;
+      font-size: 22px;
     }
 
-    .links-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
+    .photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #e7dbfa;
+      margin: 10px 0 12px;
     }
 
-    .book-btn {
+    .books a {
       display: inline-block;
-      padding: 9px 14px;
-      border-radius: 6px;
+      margin: 5px 6px 6px 0;
+      padding: 7px 10px;
+      background: #e9defb;
+      color: #473873;
+      border-radius: 10px;
       text-decoration: none;
-      background: #9471d6;
-      color: white;
-      font-weight: 600;
+      font-size: 13px;
+      transition: 0.2s ease;
     }
 
-    .book-btn:hover {
-      background: #7f5bc4;
+    .books a:hover {
+      background: #d9c6f7;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      background: #efe7ff;
-      font-size: 14px;
-      color: #5a418f;
+      padding: 30px 10px 18px;
+      font-size: 13px;
+      color: #6a5a91;
     }
   </style>
 </head>
@@ -112,90 +92,74 @@
 
 <header>
   <h1>Татьяна Белозуб</h1>
-  <p>Автор развивающих детских книг. Семья. Природа. Гармония. Любовь к жизни.</p>
+  <p>Автор детских книг — о природе, жизни и внутреннем мире ребёнка</p>
 </header>
 
-<main>
+<div class="container">
 
-  <!-- Автор -->
-  <section>
+  <div class="section" style="text-align:center;">
+    <img src="foto.jpg" alt="Татьяна Белозуб" class="photo">
+  </div>
+
+  <div class="section">
     <h2>Обо мне</h2>
+    <p>
+      Я создаю книги, которые помогают детям и семьям чувствовать связь с природой, с собой и с миром вокруг.
+      Для меня книга — это не просто история. Это путь к внутреннему спокойствию, наблюдательности и живому осознанию.
+    </p>
+    <p>
+      Я всегда была рядом с детьми — как жена, мама и человек, который внимательно наблюдает за тем,
+      как слово, образ и атмосфера влияют на детскую душу.
+    </p>
+  </div>
 
-    <div class="author-block">
-      <!-- фото из файла photo.jpg -->
-      <img src="photo.jpg" alt="Татьяна Белозуб">
+  <div class="section">
+    <h2>Мой путь: жена, мама, автор</h2>
+    <p>
+      Семья стала местом, где я увидела: то, что мы даём ребёнку для души, формирует то, кем он станет.
+    </p>
+    <p>
+      Я наблюдала, как по-разному действуют книги и мультфильмы.
+      Мультфильмы дают готовую картинку, не оставляя пространства для внутренней работы.
+      А книга открывает пространство воображения: ребёнок думает, чувствует, делает выводы.
+    </p>
+    <p>
+      Когда мы подаём знания мягко и образно, ребёнок учится мыслить самостоятельно,
+      задавать вопросы и ощущать связь с Землёй, водой, природой и собой.
+      Так появились мои книги — не для развлечения, а для роста.
+    </p>
+  </div>
 
-      <div>
-        <p>
-          Меня зовут <strong>Татьяна Белозуб</strong>.  
-          Я создаю добрые, глубокие и спокойные детские истории —
-          о природе, семье, внутреннем свете и уважении к миру вокруг.
-        </p>
-
-        <p>
-          Мои книги помогают детям чувствовать гармонию, замечать живые процессы
-          на Земле и понимать, что человек может не только брать,
-          но и создавать добро и порядок вокруг себя.
-        </p>
-
-        <p>
-          Я верю, что совместное чтение — это пространство любви, диалога,
-          безопасности и тихой мудрости. В этом — сила детской литературы.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Книги -->
-  <section>
+  <div class="section">
     <h2>Мои книги</h2>
 
-    <p>
-      Серия «Познай свой мир» — это книги о Земле, воде, природе,
-      семье, ответственности и внутренней гармонии.  
-      Ниже — издания, доступные на Amazon:
-    </p>
-
-    <div class="books-list">
-
-      <div class="book-card">
-        <h3>Матушка-Земля — Познай свой мир</h3>
-        <p>Иллюстрированная развивающая книга для детей 2–6 лет.</p>
-
-        <div class="links-row">
-          <a href="https://www.amazon.pl/dp/B0G7JCLVT6" target="_blank" class="book-btn">Amazon Poland</a>
-          <a href="https://www.amazon.co.uk/dp/B0G7D2PFZ2" target="_blank" class="book-btn">Amazon UK</a>
-          <a href="https://www.amazon.com/dp/B0G6Y3NH2Y" target="_blank" class="book-btn">Amazon USA</a>
-          <a href="https://www.amazon.com/dp/B0G71N2W2Z" target="_blank" class="book-btn">Amazon (Alt)</a>
-        </div>
-      </div>
-
+    <p><strong>Матушка-Земля — Земелька</strong></p>
+    <div class="books">
+      <a href="https://www.amazon.com/dp/B0G71N2W2Z" target="_blank">Amazon US</a>
+      <a href="https://www.amazon.co.uk/dp/B0G7D2PFZ2" target="_blank">Amazon UK</a>
+      <a href="https://www.amazon.pl/dp/B0G7JCLVT6" target="_blank">Amazon PL</a>
     </div>
-  </section>
 
-  <!-- Контакты -->
-  <section>
-    <h2>Контакты</h2>
+    <p><strong>Книга о Воде</strong></p>
+    <div class="books">
+      <a href="https://www.amazon.com/dp/B0G6Y3NH2Y" target="_blank">Amazon US</a>
+      <a href="https://www.amazon.co.uk/dp/B0G7D2PFZ2" target="_blank">Amazon UK</a>
+      <a href="https://www.amazon.pl/dp/B0G7JCLVT6" target="_blank">Amazon PL</a>
+    </div>
+  </div>
 
+  <div class="section">
+    <h2>Связаться со мной</h2>
     <p>
-      Я открыта к сотрудничеству с издателями, педагогами, иллюстраторами
-      и образовательными проектами.
+      Если вам близка тематика моих книг или вы хотите обсудить сотрудничество —
+      напишите мне: <strong>ваш email здесь</strong>.
     </p>
+  </div>
 
-    <p>
-      По вопросам публикаций, переводов и партнёрств:
-    </p>
-
-    <p>
-      Эл. почта:<br>
-      <a href="mailto:suweren67948@proton.me">suweren67948@proton.me</a>
-    </p>
-  </section>
-
-</main>
+</div>
 
 <footer>
-  © 2026 Татьяна Белозуб. Все права защищены.
+  © Татьяна Белозуб — детские книги, вдохновлённые природой и любовью
 </footer>
 
 </body>
